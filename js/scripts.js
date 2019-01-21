@@ -26,7 +26,7 @@ placesToGo.parsePlaces = (data) => {
   let placesHtml = data.map((item) => {
     let itemHtml = `
       <article class="place-card">
-        <a class="place-map" href="http://maps.google.com/?q=${item.street}">
+        <a class="place-map" target="_blank" href="http://maps.google.com/?q=${item.street}">
           <h2 class="place-name">${item.name}</h2>
           <p class="street-name">${item.street}</p>
           <p class="place-directions">${item.directions}</p>
