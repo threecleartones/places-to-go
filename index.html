@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Places to "go" in Toronto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <h1 class="heading">Places to <span class="go">go</span> <span class="wbr">in Toronto</span></h1>
+    <p class="blurb">
+      A list of public bathrooms in Toronto, filterable by keyword. <span class="api">Brought to you by the <a href="https://www.refugerestrooms.org/">Refuge Restrooms</a> API.</span>
+    </p>
+    <p class="street-search">
+      <label for="streetName" class="search-label">Search</label>
+      <input id="streetName" class="search-field" type="text" placeholder="ex. street name" autofocus="autofocus" />
+    </p>
+    <div id="placesList" class="cards-wrapper"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </body>
+</html>

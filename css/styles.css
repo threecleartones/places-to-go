@@ -1,0 +1,165 @@
+/* border-box ftw */
+/* http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1em;
+}
+
+body,
+a {
+  color: #777;
+  font-family: "open sans", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+body {
+  padding: 1em;
+  background-color: #eee;
+}
+
+a {
+  position: relative;
+  
+  color: #77a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+  a:focus,
+  a:hover {
+    text-decoration:none;
+  }
+
+  a:focus::after,
+  a:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #77a;
+  }
+
+.heading {
+  margin: 0 0 .5em;
+
+  color: #bbb;
+  font-size: 7rem;
+  line-height: 1;
+  word-spacing: -.3rem;
+  letter-spacing: -.15rem;
+}
+
+  .heading .go {
+    color: #888;
+    font-size: 8rem;
+  }
+
+.blurb {
+  text-shadow: 1px 1px 0 #fff;
+}
+
+  .blurb .api {
+    display: block;
+  }
+
+.search-label {
+  position:absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.search-field {
+  width: 100%;
+  padding: .5em;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+
+  color: #777;
+  font-size: 3rem;
+}
+
+.search-field::placeholder {
+  color: #c4c4c4;
+}
+
+.search-field:focus,
+.search-field:hover {
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 0 6px 0px #ccc;
+}
+
+.place-card {
+  margin: 0 0 1em;
+
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.place-map {
+  display: block;
+  padding: 1em;
+  border: 4px solid #e6e6e6;
+  border-radius: 8px;
+  background-color: #e6e6e6;
+  transition: background-color 0.4s ease;
+
+  color: #777;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.place-map:focus,
+.place-map:hover {
+  background-color: #eee;
+}
+
+.place-map:focus::after,
+.place-map:hover::after {
+  content: normal;
+}
+
+.place-map:focus .street-name::after,
+.place-map:hover .street-name::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #77a;
+}
+
+.place-name {
+  margin: 0;
+}
+
+.street-name {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+
+  color: #77a;
+  font-weight: 700;
+}
+
+.place-directions {
+  font-family: merriweather, serif;
+  font-style: italic;
+}
+
+.place-directions::before {
+  content: "\201C";
+  position: relative;
+  left: -6px;
+
+  color: #aaa;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
