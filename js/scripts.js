@@ -23,8 +23,8 @@ placesToGo.getPlaces = () => {
 
 // create cards for each item and pass to filter function
 placesToGo.parsePlaces = (data) => {
-  let placesHtml = data.map((item) => {
-    let itemHtml = `
+  const placesHtml = data.map((item) => {
+    const itemHtml = `
       <article class="place-card">
         <a class="place-map" target="_blank" href="http://maps.google.com/?q=${item.street}">
           <h2 class="place-name">${item.name}</h2>
@@ -44,10 +44,10 @@ placesToGo.filterCards = (streets) => {
   $("#placesList").html(streets);
   
   $("#streetName").bind("input", function() {
-    let streetName = $(this).val();
+    const streetName = $(this).val();
     // console.log(streetName);
 
-    let filterItems = (streetName) => {
+    const filterItems = (streetName) => {
       return streets.filter((element) => {
         return element.toLowerCase().indexOf(streetName.toLowerCase()) > -1;
       });
