@@ -1,4 +1,4 @@
-# Places to go in Toronto
+# Places to "go" in Toronto
 
 A list of public restrooms in Toronto, filterable by keyword. Brought to you by the [Refuge Restrooms](https://www.refugerestrooms.org/) API.
 
