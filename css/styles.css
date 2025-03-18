@@ -60,15 +60,18 @@ a {
   .heading .go {
     color: #888;
     font-size: 8rem;
+    line-height: 1;
   }
 
 @media only screen and (max-width: 768px) {
   .heading {
     font-size: 5rem;
+    line-height: 1.2;
   }
 
   .heading .go {
     font-size: 6rem;
+    line-height: 0;
   }
 }
 
